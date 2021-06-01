@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
 }
@@ -83,15 +89,24 @@ body{
 }
 
 .icon-button{
+    position: relative;
     width: 32px;
     height: 32px;
-    margin-left: 32px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+    cursor: pointer;
 }
 
-.nav__container .icon-button:hover{
+.icon-button svg{
+    fill: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav__container .icon-button{
+    margin-left: 32px;
+}
+
+.icon-button:hover{
     opacity: 0.8;
 }
 
@@ -113,15 +128,19 @@ body{
     border-radius: 20px;
 }
 
-.nav-aside__head{
+.nav-aside__head {
     display: flex;
     justify-content: flex-end;
+    padding: 10px 0 3px 0;
 }
 
 .icon-button_close{
-    background-image: url(img/close.svg);
-    width: 44px;
-    height: 44px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-button_close svg{
+    fill: #6F6E6E;
 }
 
 .icon-button_logo{
@@ -129,22 +148,8 @@ body{
     width: 44px;
     height: 44px;
     margin-left: 0;
-}
-
-.icon-button_search{
-    background-image: url(img/search.svg);
-}
-
-.icon-button_burger{
-    background-image: url(img/burger.svg);
-}
-
-.icon-button_bascet{
-    background-image: url(img/bascet.svg);
-}
-
-.icon-button_user{
-    background-image: url(img/user.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .nav__container{
@@ -224,6 +229,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.preview-catalog__item:hover{
+    opacity: 0.8;
 }
 
 .preview-catalog__item:last-child{
@@ -393,11 +402,10 @@ body{
 }
 
 .button__icon_bascet{
-    width: 24px;
-    height: 24px;
-    background-image: url(img/bascet1.svg);
-    background-size: cover;
     margin-right: 8px;
+    fill: #fff;
+    width: 27px;
+    height: 24px;
 }
 
 .button_card{
@@ -606,11 +614,26 @@ body{
 .social{
     width: 32px;
     height: 32px;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-left: 8px;
+    background-color: #fff;
 }
 
+.social svg{
+    fill: black;
+}
+
+.social:hover{
+    background-color: #F16D7F;
+}
+
+.social:hover svg{
+    fill: #fff;
+}
+
+
+
+
+/* 
 .social_fcb{
     background-image: url(img/social/fcb.svg);
 }
@@ -641,5 +664,5 @@ body{
 
 .social_pin:hover{
     background-image: url(img/social/pin-h.svg);
-}
+} */
 
