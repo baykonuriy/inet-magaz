@@ -18,7 +18,6 @@ for (i = 0; i <= card.length - 1; i++) {
 
 //open/close menu
 
-
 let buttonCloseMenu = document.querySelector('.icon-button.icon-button_burger')
 let closedAsideMenu = document.querySelector('.nav-aside')
 let closeButton = document.querySelector('.icon-button.icon-button_close')
@@ -41,7 +40,3 @@ function removeClickClose(e) {
 }
 
 closeButton.addEventListener('click', openedMenu, removeClickClose, false)
-
-
-
-
