@@ -106,86 +106,61 @@
             <header class="filter">
                 <div class="filter__main">
 
-                    <!-- <div class="option-select">
-                        <label for="ch-color" class="option-select-lable">
-                            <span>CHOOSE COLOR</span>
+                    <div class="option-select">
+                        <input id="mfilter" type="checkbox" class="option-select-choff">
+                        <label for="mfilter" class="option-select-lable">
+                            <span>filter</span>
                         </label>
-                        <input id="ch-color" type="checkbox" class="option-select-choff">
                         <div class="option-select-list">
-                            <div class="checkbox">
-                                <input type="checkbox" id="red" name="red" checked>
-                                <label class="checkbox-label" for="red">xs</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="green" name="green">
-                                <label class="checkbox-label" for="green">xs</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="black" name="black">
-                                <label class="checkbox-label" for="black">xs</label>
+                            <div class="filter__main__list-wrapper opened-wrapper">
+                                <ul class="filter__main__list opened-filter filter__main__list_category">
+                                    <li class="filter__main__list__item select-item">CATEGORY</li>
+                                    <li class="filter__main__list__item">Accessories</li>
+                                    <li class="filter__main__list__item">Bags</li>
+                                    <li class="filter__main__list__item">Denim</li>
+                                    <li class="filter__main__list__item">Hoodies & Sweatshirts</li>
+                                    <li class="filter__main__list__item">Jackets & Coats</li>
+                                    <li class="filter__main__list__item">Polos</li>
+                                    <li class="filter__main__list__item">Shirts</li>
+                                    <li class="filter__main__list__item">Shoes</li>
+                                    <li class="filter__main__list__item">Sweaters & Knits</li>
+                                    <li class="filter__main__list__item">T-Shirts</li>
+                                    <li class="filter__main__list__item">Tanks</li>
+                                </ul>
+                                <ul class="filter__main__list closed-filter filter__main__list_brands">
+                                    <li class="filter__main__list__item select-item">brends</li>
+                                    <li class="filter__main__list__item">Accessories</li>
+                                    <li class="filter__main__list__item">Bags</li>
+                                    <li class="filter__main__list__item">Denim</li>
+                                    <li class="filter__main__list__item">Hoodies & Sweatshirts</li>
+                                    <li class="filter__main__list__item">Jackets & Coats</li>
+                                    <li class="filter__main__list__item">Polos</li>
+                                    <li class="filter__main__list__item">Shirts</li>
+                                    <li class="filter__main__list__item">Shoes</li>
+                                    <li class="filter__main__list__item">Sweaters & Knits</li>
+                                    <li class="filter__main__list__item">T-Shirts</li>
+                                    <li class="filter__main__list__item">Tanks</li>
+                                </ul>
+                                <ul class="filter__main__list closed-filter filter__main__list_designers">
+                                    <li class="filter__main__list__item select-item">designers</li>
+                                    <li class="filter__main__list__item">Accessories</li>
+                                    <li class="filter__main__list__item">Bags</li>
+                                    <li class="filter__main__list__item">Denim</li>
+                                    <li class="filter__main__list__item">Hoodies & Sweatshirts</li>
+                                    <li class="filter__main__list__item">Jackets & Coats</li>
+                                    <li class="filter__main__list__item">Polos</li>
+                                    <li class="filter__main__list__item">Shirts</li>
+                                    <li class="filter__main__list__item">Shoes</li>
+                                    <li class="filter__main__list__item">Sweaters & Knits</li>
+                                    <li class="filter__main__list__item">T-Shirts</li>
+                                    <li class="filter__main__list__item">Tanks</li>
+                                </ul>
                             </div>
                         </div>
-                    </div> -->
-                    <span class="filter__main__headline">
-                        <span>FILTER</span>
-                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.33333 13H4.66667C5.125 13 5.5 12.625 5.5 12.1667C5.5 11.7083 5.125 11.3333 4.66667 11.3333H1.33333C0.875 11.3333 0.5 11.7083 0.5 12.1667C0.5 12.625 0.875 13 1.33333 13ZM0.5 3.83333C0.5 4.29167 0.875 4.66667 1.33333 4.66667H14.6667C15.125 4.66667 15.5 4.29167 15.5 3.83333C15.5 3.375 15.125 3 14.6667 3H1.33333C0.875 3 0.5 3.375 0.5 3.83333ZM1.33333 8.83333H9.66667C10.125 8.83333 10.5 8.45833 10.5 8C10.5 7.54167 10.125 7.16667 9.66667 7.16667H1.33333C0.875 7.16667 0.5 7.54167 0.5 8C0.5 8.45833 0.875 8.83333 1.33333 8.83333Z" />
-                        </svg>
-                    </span>
-                    <div class="filter__main__list-wrapper opened-wrapper">
-                        <span class="filter__main__headline">
-                            <span>FILTER</span>
-                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.33333 13H4.66667C5.125 13 5.5 12.625 5.5 12.1667C5.5 11.7083 5.125 11.3333 4.66667 11.3333H1.33333C0.875 11.3333 0.5 11.7083 0.5 12.1667C0.5 12.625 0.875 13 1.33333 13ZM0.5 3.83333C0.5 4.29167 0.875 4.66667 1.33333 4.66667H14.6667C15.125 4.66667 15.5 4.29167 15.5 3.83333C15.5 3.375 15.125 3 14.6667 3H1.33333C0.875 3 0.5 3.375 0.5 3.83333ZM1.33333 8.83333H9.66667C10.125 8.83333 10.5 8.45833 10.5 8C10.5 7.54167 10.125 7.16667 9.66667 7.16667H1.33333C0.875 7.16667 0.5 7.54167 0.5 8C0.5 8.45833 0.875 8.83333 1.33333 8.83333Z" />
-                            </svg>
-                        </span>
-                        <ul class="filter__main__list opened-filter filter__main__list_category">
-                            <li class="filter__main__list__item select-item">CATEGORY</li>
-                            <li class="filter__main__list__item">Accessories</li>
-                            <li class="filter__main__list__item">Bags</li>
-                            <li class="filter__main__list__item">Denim</li>
-                            <li class="filter__main__list__item">Hoodies & Sweatshirts</li>
-                            <li class="filter__main__list__item">Jackets & Coats</li>
-                            <li class="filter__main__list__item">Polos</li>
-                            <li class="filter__main__list__item">Shirts</li>
-                            <li class="filter__main__list__item">Shoes</li>
-                            <li class="filter__main__list__item">Sweaters & Knits</li>
-                            <li class="filter__main__list__item">T-Shirts</li>
-                            <li class="filter__main__list__item">Tanks</li>
-                        </ul>
-                        <ul class="filter__main__list closed-filter filter__main__list_brands">
-                            <li class="filter__main__list__item select-item">brends</li>
-                            <li class="filter__main__list__item">Accessories</li>
-                            <li class="filter__main__list__item">Bags</li>
-                            <li class="filter__main__list__item">Denim</li>
-                            <li class="filter__main__list__item">Hoodies & Sweatshirts</li>
-                            <li class="filter__main__list__item">Jackets & Coats</li>
-                            <li class="filter__main__list__item">Polos</li>
-                            <li class="filter__main__list__item">Shirts</li>
-                            <li class="filter__main__list__item">Shoes</li>
-                            <li class="filter__main__list__item">Sweaters & Knits</li>
-                            <li class="filter__main__list__item">T-Shirts</li>
-                            <li class="filter__main__list__item">Tanks</li>
-                        </ul>
-                        <ul class="filter__main__list closed-filter filter__main__list_designers">
-                            <li class="filter__main__list__item select-item">designers</li>
-                            <li class="filter__main__list__item">Accessories</li>
-                            <li class="filter__main__list__item">Bags</li>
-                            <li class="filter__main__list__item">Denim</li>
-                            <li class="filter__main__list__item">Hoodies & Sweatshirts</li>
-                            <li class="filter__main__list__item">Jackets & Coats</li>
-                            <li class="filter__main__list__item">Polos</li>
-                            <li class="filter__main__list__item">Shirts</li>
-                            <li class="filter__main__list__item">Shoes</li>
-                            <li class="filter__main__list__item">Sweaters & Knits</li>
-                            <li class="filter__main__list__item">T-Shirts</li>
-                            <li class="filter__main__list__item">Tanks</li>
-                        </ul>
                     </div>
+
                 </div>
-                <ul class="filter__second">
+                <div class="filter__second">
                     <div class="option-select">
                         <label for="ch-color" class="option-select-lable">
                             <span>TRENDING NOW</span>
@@ -246,46 +221,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <li class="filter__second__item">
-                        <span>TRENDING NOW</span>
-                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7.99238 10.5002C7.82544 10.5005 7.66366 10.4424 7.53512 10.3359L3.24834 6.76354C3.10243 6.64227 3.01068 6.468 2.99326 6.27908C2.97584 6.09016 3.03418 5.90205 3.15546 5.75615C3.27673 5.61024 3.45099 5.51849 3.63992 5.50107C3.82884 5.48365 4.01694 5.542 4.16285 5.66327L7.99238 8.86407L11.8219 5.77758C11.895 5.71824 11.9791 5.67392 12.0693 5.64717C12.1596 5.62043 12.2543 5.61179 12.3479 5.62175C12.4415 5.63171 12.5322 5.66007 12.6148 5.7052C12.6975 5.75034 12.7703 5.81136 12.8293 5.88475C12.8947 5.95821 12.9443 6.0444 12.9749 6.1379C13.0054 6.23141 13.0164 6.33022 13.007 6.42814C12.9976 6.52607 12.9681 6.621 12.9203 6.70699C12.8725 6.79298 12.8075 6.86818 12.7293 6.92787L8.44249 10.3787C8.31025 10.4684 8.15177 10.5112 7.99238 10.5002V10.5002Z" />
-                        </svg>
-                    </li>
-                    <li class="filter__second__item">
-                        <span>SIZE</span>
-                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7.99238 10.5002C7.82544 10.5005 7.66366 10.4424 7.53512 10.3359L3.24834 6.76354C3.10243 6.64227 3.01068 6.468 2.99326 6.27908C2.97584 6.09016 3.03418 5.90205 3.15546 5.75615C3.27673 5.61024 3.45099 5.51849 3.63992 5.50107C3.82884 5.48365 4.01694 5.542 4.16285 5.66327L7.99238 8.86407L11.8219 5.77758C11.895 5.71824 11.9791 5.67392 12.0693 5.64717C12.1596 5.62043 12.2543 5.61179 12.3479 5.62175C12.4415 5.63171 12.5322 5.66007 12.6148 5.7052C12.6975 5.75034 12.7703 5.81136 12.8293 5.88475C12.8947 5.95821 12.9443 6.0444 12.9749 6.1379C13.0054 6.23141 13.0164 6.33022 13.007 6.42814C12.9976 6.52607 12.9681 6.621 12.9203 6.70699C12.8725 6.79298 12.8075 6.86818 12.7293 6.92787L8.44249 10.3787C8.31025 10.4684 8.15177 10.5112 7.99238 10.5002V10.5002Z" />
-                        </svg>
-                        <form action="#" class="filter__second__item__item-opened">
-                            <div class="checkbox">
-                                <input type="checkbox" id="xs" name="xs" checked>
-                                <label class="checkbox-label" for="xs">xs</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="s" name="s">
-                                <label class="checkbox-label" for="s">s</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="m" name="m">
-                                <label class="checkbox-label" for="m">m</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="l" name="l">
-                                <label class="checkbox-label" for="l">l</label>
-                            </div>
-                        </form>
-                    </li>
-                    <li class="filter__second__item">
-                        <span>PRICE</span>
-                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7.99238 10.5002C7.82544 10.5005 7.66366 10.4424 7.53512 10.3359L3.24834 6.76354C3.10243 6.64227 3.01068 6.468 2.99326 6.27908C2.97584 6.09016 3.03418 5.90205 3.15546 5.75615C3.27673 5.61024 3.45099 5.51849 3.63992 5.50107C3.82884 5.48365 4.01694 5.542 4.16285 5.66327L7.99238 8.86407L11.8219 5.77758C11.895 5.71824 11.9791 5.67392 12.0693 5.64717C12.1596 5.62043 12.2543 5.61179 12.3479 5.62175C12.4415 5.63171 12.5322 5.66007 12.6148 5.7052C12.6975 5.75034 12.7703 5.81136 12.8293 5.88475C12.8947 5.95821 12.9443 6.0444 12.9749 6.1379C13.0054 6.23141 13.0164 6.33022 13.007 6.42814C12.9976 6.52607 12.9681 6.621 12.9203 6.70699C12.8725 6.79298 12.8075 6.86818 12.7293 6.92787L8.44249 10.3787C8.31025 10.4684 8.15177 10.5112 7.99238 10.5002V10.5002Z" />
-                        </svg>
-                    </li> -->
-                </ul>
+
+                </div>
             </header>
 
             <div class="showcase">
@@ -300,7 +237,10 @@
                                 <span>Add to&nbsp;Cart</span>
                             </div>
                         </a>
-                        <img src="img/products/img1.png" alt="" class="card-product__image">
+                        <video class="card-product__image" width="400" height="300" autoplay loop muted
+                            src="https://storage.coverr.co/videos/IVBW7jVjkQhNeznVYPnH9uD9Wj3Pyt17?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTkwMTcyNjY5fQ.1kjgP-D14QO1sowdor9oXyzMshES9OUnqmx6vVM0d54">
+                        </video>
+                        <!-- <img src="img/products/img1.png" alt="" class="card-product__image"> -->
                     </div>
                     <div class="card-product__description">
                         <a href="#" class="card-product__description__h4">ELLERY X&nbsp;M&rsquo;O CAPSULE</a>
