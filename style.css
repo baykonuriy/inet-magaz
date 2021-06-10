@@ -695,11 +695,11 @@ body{
 }
 
 .filter__main__list-wrapper{
-    box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
-    padding: 16px;
-    position: absolute;
+    /* box-shadow: 6px 4px 35px rgb(0 0 0 / 21%); */
+    /* padding: 16px; */
+    /* position: absolute;
     top: -16px;
-    left: 0;
+    left: 0; */
     background-color: #fff;
     width: 100%;
 }

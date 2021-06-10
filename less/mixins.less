@@ -1,0 +1,60 @@
+.text(@style: normal, @weight: 300, @size: 14px, @lheight: 17px, @align: center, @color: #5E5E5E){
+    font-style: @style;
+    font-weight: @weight;
+    font-size: @size;
+    line-height: @lheight;
+    text-align: @align;
+    color: @color;
+}
+
+.headline(@style: normal, @weight: 300, @size: 18px, @lheight: 22px, @align: center, @color: #4D4D4D, @ttransform: uppercase){
+    font-style: @style;
+    font-weight: @weight;
+    font-size: @size;
+    line-height: @lheight;
+    text-align: @align;
+    color: @color;
+    text-transform: @ttransform;
+}
+
+.btn(@padding: 12px 40px, @border: 1px solid @fuxia, @color: @fuxia, @display: flex){
+    padding: @padding;
+    border: @border;
+    color: @color;
+    display: @display;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.btn-txt(@fstyle: normal, @fweight: normal, @fsize: 16px, @lheight: 19px, @mleft: 8px){
+    font-style: @fstyle;
+    font-weight: @fweight;
+    font-size: @fsize;
+    line-height: @lheight;
+    margin-left: @mleft;
+}
+
+.ibtn(@width: 16px, @height: 16px, @bgc: #fff, @ficon: @fuxia){
+    width: @width;
+    height: @height;
+    background-color: @bgc;
+    &:hover svg path{
+        fill: @ficon;
+    };
+};
+
+.container(){
+    max-width: 1140px;
+    margin: 0 auto;
+    @media (max-width:1200px){
+        margin-right: 30px;
+        margin-left: 30px;
+    };
+
+    @media (max-width:768px){
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+};
