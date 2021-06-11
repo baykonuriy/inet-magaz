@@ -461,13 +461,13 @@ body{
 }
 
 .main-advantage__item:nth-child(1) .main-advantage__item__image{
-    background-image: url(img/icon1.svg);
+    background-image: url(../img/icon1.svg);
 }
 .main-advantage__item:nth-child(2) .main-advantage__item__image{
-    background-image: url(img/icon2.svg);
+    background-image: url(../img/icon2.svg);
 }
 .main-advantage__item:nth-child(3) .main-advantage__item__image{
-    background-image: url(img/icon3.svg);
+    background-image: url(../img/icon3.svg);
 }
 
 .main-advantage__item__headline{
