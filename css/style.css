@@ -153,7 +153,7 @@ body{
 }
 
 .icon-button_logo{
-    background-image: url(img/logo.png);
+    background-image: url(../img/logo.png);
     width: 44px;
     height: 44px;
     margin-left: 0;
@@ -190,7 +190,7 @@ body{
 }
 
 .promo_main_model1{
-    background-image: url(img/Layer_57-removebg-preview\ 1.png);
+    background-image: url(../img/Layer_57-removebg-preview\ 1.png);
     background-position: top -20px;
     background-position-x: -226px;
     background-size: auto 100%;
@@ -251,19 +251,19 @@ body{
 }
 
 .preview-catalog__item_woman{
-    background-image: url(img/pre-cat-1.jpg);
+    background-image: url(../img/pre-cat-1.jpg);
 }
 
 .preview-catalog__item_man{
-    background-image: url(img/pre-cat-2.jpg);
+    background-image: url(../img/pre-cat-2.jpg);
 }
 
 .preview-catalog__item_kids{
-    background-image: url(img/pre-cat-3.jpg);
+    background-image: url(../img/pre-cat-3.jpg);
 }
 
 .preview-catalog__item_acess{
-    background-image: url(img/pre-cat-4.jpg);
+    background-image: url(../img/pre-cat-4.jpg);
 }
 
 .preview-catalog__item__headline{
