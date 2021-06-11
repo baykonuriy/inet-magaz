@@ -492,7 +492,7 @@ body{
 
 .footer__top{
     padding: 96px 0 156px 0;
-    background-image: url(img/bckg-footer.jpg);
+    background-image: url(../img/bckg-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -587,7 +587,7 @@ body{
 }
 
 .face__image{
-    background-image: url(img/face.png);
+    background-image: url(../img/face.png);
     height: 96px;
     width: 96px;
     margin-bottom: 30px;
@@ -842,7 +842,7 @@ input[type = 'checkbox']{
 }
 
 input[type = "checkbox"]:checked ~ label::before{
-    background-image: url(img/check.svg);
+    background-image: url(../img/check.svg);
     background-repeat: no-repeat;
     background-size: 10px 10px;
     background-position: center;
