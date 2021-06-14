@@ -1,0 +1,59 @@
+@import "var.less";
+@import "mixins.less";
+
+.newbtn {
+    &_ghost {
+        .btn(@border: 1px solid #A4A4A4, @color: #000);
+
+        &:hover {
+            .btn(@bgc: @fuxia, @color: #fff);
+        }
+
+        & svg {
+            & path {
+                fill: #000;
+            }
+
+        }
+
+        &:hover svg path {
+            fill: #fff;
+        }
+
+        &_primary {
+            .btn();
+
+            & svg {
+                & path {
+                    fill: @fuxia;
+                }
+            }
+        }
+
+        &_dark {
+            .btn(@border: 1px solid #fff, @color: #fff);
+
+            & svg {
+                & path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    &_primary {
+        .btn(@bgc: @fuxia, @color: #fff);
+    }
+
+    &__txt {
+        .btn-txt();
+    }
+
+    & svg:first-child {
+        .btn-i();
+    }
+
+    & svg:last-child {
+        .btn-i(8px, 0);
+    }
+}

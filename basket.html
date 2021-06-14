@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <main class="bascet-pg">
+        <section class="bascet-pg__card-list">
+            <article class="bascet-pg__card-list__card">
+                <div class="bascet-pg__card-list__card__image">
+                    <img src="img/basket-card-1.png" alt="">
+                </div>
+                <div class="bascet-pg__card-list__card__content">
+                    <header class="bascet-pg__card-list__card__content__header">
+                        <h4 class="bascet-pg__card-list__card__content__header__h4">MANGO PEOPLE T-SHIRT</h4>
+                        <button class="bascet-pg__card-list__card__content__header__close-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.4099 11.9992L17.7099 7.70921C17.8982 7.52091 18.004 7.26551 18.004 6.99921C18.004 6.73291 17.8982 6.47751 17.7099 6.28921C17.5216 6.10091 17.2662 5.99512 16.9999 5.99512C16.7336 5.99512 16.4782 6.10091 16.2899 6.28921L11.9999 10.5892L7.70994 6.28921C7.52164 6.10091 7.26624 5.99512 6.99994 5.99512C6.73364 5.99512 6.47824 6.10091 6.28994 6.28921C6.10164 6.47751 5.99585 6.73291 5.99585 6.99921C5.99585 7.26551 6.10164 7.52091 6.28994 7.70921L10.5899 11.9992L6.28994 16.2892C6.19621 16.3822 6.12182 16.4928 6.07105 16.6146C6.02028 16.7365 5.99414 16.8672 5.99414 16.9992C5.99414 17.1312 6.02028 17.2619 6.07105 17.3838C6.12182 17.5056 6.19621 17.6162 6.28994 17.7092C6.3829 17.8029 6.4935 17.8773 6.61536 17.9281C6.73722 17.9789 6.86793 18.005 6.99994 18.005C7.13195 18.005 7.26266 17.9789 7.38452 17.9281C7.50638 17.8773 7.61698 17.8029 7.70994 17.7092L11.9999 13.4092L16.2899 17.7092C16.3829 17.8029 16.4935 17.8773 16.6154 17.9281C16.7372 17.9789 16.8679 18.005 16.9999 18.005C17.132 18.005 17.2627 17.9789 17.3845 17.9281C17.5064 17.8773 17.617 17.8029 17.7099 17.7092C17.8037 17.6162 17.8781 17.5056 17.9288 17.3838C17.9796 17.2619 18.0057 17.1312 18.0057 16.9992C18.0057 16.8672 17.9796 16.7365 17.9288 16.6146C17.8781 16.4928 17.8037 16.3822 17.7099 16.2892L13.4099 11.9992Z"
+                                    fill="#6F6E6E" />
+                            </svg>
+                        </button>
+                    </header>
+                    <ul class="bascet-pg__card-list__card__content__list">
+                        <li class="bascet-pg__card-list__card__content__list__item">
+                            <span class="bascet-pg__card-list__card__content__list__item__key">Price:</span>
+                            <span class="bascet-pg__card-list__card__content__list__item__value_price">$300</span>
+                        </li>
+                        <li class="bascet-pg__card-list__card__content__list__item">
+                            <span class="bascet-pg__card-list__card__content__list__item__key">Color:</span>
+                            <span class="bascet-pg__card-list__card__content__list__item__value">Red</span>
+                        </li>
+                        <li class="bascet-pg__card-list__card__content__list__item">
+                            <span class="bascet-pg__card-list__card__content__list__item__key">Size:</span>
+                            <span class="bascet-pg__card-list__card__content__list__item__value">XL</span>
+                        </li>
+                        <li class="bascet-pg__card-list__card__content__list__item">
+                            <span class="bascet-pg__card-list__card__content__list__item__key">Quantity:</span>
+                            <input class="bascet-pg__card-list__card__content__list__item__quan" type="number"
+                                id="quantity1" name="quantity1" min="10" max="100">
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="bascet-pg__buy">
+            <form action="#" class="bascet-pg__buy__postcode">
+                <legend>SHIPPING ADRESS</legend>
+                <select class="new-inp_slct select-list" name="select" placeholder="Bangladesh">
+                        <option value="value1">Bangladesh</option>
+                        <option value="value2" selected>Bangladesh</option>
+                        <option value="value3">Russia</option>
+                </select>
+                <input class="new-inp_txt" type="text" name="state" id="state" placeholder="State">
+                <input class="new-inp_txt" type="text" name="pcode" id="pcode" placeholder="Postcode / Zip">
+                <button class="newbtn">
+                    <span class="newbtn__txt">GET A QUOTE</span>
+                </button>
+            </form>
+            <footer class="bascet-pg__buy__go">
+                <ul class="bascet-pg__buy__go__list">
+                    <li class="bascet-pg__buy__go__list__item">
+                        <span class="bascet-pg__buy__list__item__key">Sub total</span>
+                        <span class="bascet-pg__buy__list__item__value">$900</span>
+                    </li>
+                    <li class="bascet-pg__buy__go__list__item">
+                        <span class="bascet-pg__buy__list__item__key">Sub total</span>
+                        <span class="bascet-pg__buy__list__item__value">$900</span>
+                    </li>
+                </ul>
+                <button class="newbtn newbtn_primary">
+                    <span class="newbtn__txt">PROCEED TO CHECKOUT</span>
+                </button>
+            
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>

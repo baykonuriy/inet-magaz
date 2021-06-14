@@ -83,6 +83,77 @@
 .filter__main .option-select-choff[type="checkbox"]:checked ~ .option-select-lable::after {
   background-image: url(../img/filter-fuxia.svg);
 }
+.newbtn_ghost {
+  padding: 12px 40px;
+  border: 1px solid #a4a4a4;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: none;
+}
+.newbtn_ghost:hover {
+  padding: 12px 40px;
+  border: 1px solid #f16d7f;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f16d7f;
+}
+.newbtn_ghost svg path {
+  fill: #000;
+}
+.newbtn_ghost:hover svg path {
+  fill: #fff;
+}
+.newbtn_ghost_primary {
+  padding: 12px 40px;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: none;
+}
+.newbtn_ghost_primary svg path {
+  fill: #f16d7f;
+}
+.newbtn_ghost_dark {
+  padding: 12px 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: none;
+}
+.newbtn_ghost_dark svg path {
+  fill: #fff;
+}
+.newbtn_primary {
+  padding: 12px 40px;
+  border: 1px solid #f16d7f;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f16d7f;
+}
+.newbtn__txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.newbtn svg:first-child {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.newbtn svg:last-child {
+  margin-left: 8px;
+  margin-right: 0;
+}
 .prd-pg-slider {
   width: 100%;
   height: 777px;
@@ -120,14 +191,14 @@
 }
 @media (max-width: 1200px) {
   .prd-pg-card {
-    margin-right: 30px;
-    margin-left: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 768px) {
   .prd-pg-card {
-    margin-right: 16px;
-    margin-left: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 .prd-pg-card-header {
@@ -205,15 +276,199 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: none;
   margin: 0 auto;
-}
-.prd-pg-card-footer .newbtn:hover {
-  opacity: 0.8;
 }
 .prd-pg-card-footer .newbtn-span {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  margin-left: 8px;
+}
+.new-inp_txt {
+  border: 1px solid #a4a4a4;
+  padding: 14px 16px;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  color: #000000;
+}
+.new-inp_txt::-webkit-input-placeholder {
+  color: #B1B1B1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  color: #b1b1b1;
+}
+.new-inp_txt:-ms-input-placeholder {
+  color: #B1B1B1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  color: #b1b1b1;
+}
+.new-inp_txt::-ms-input-placeholder {
+  color: #B1B1B1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  color: #b1b1b1;
+}
+.new-inp_txt::placeholder {
+  color: #B1B1B1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  color: #b1b1b1;
+}
+.new-inp_txt:focus {
+  border: 1px solid #f16d7f;
+}
+.new-inp_txt:focus:hover {
+  border: 1px solid #b02a3c;
+}
+.new-inp_txt:hover {
+  border: 1px solid #000;
+}
+.new-inp_slct {
+  border: 1px solid #a4a4a4;
+  padding: 14px 16px;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+  color: #000000;
+}
+.new-inp_slct:focus {
+  outline: 1px solid #f16d7f;
+  border: none;
+}
+.new-inp_slct:focus:hover {
+  outline: 1px solid #b02a3c;
+}
+.new-inp_slct:hover {
+  outline: 1px solid #000;
+  border: none;
+}
+.bascet-pg {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 96px;
+}
+@media (max-width: 1200px) {
+  .bascet-pg {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .bascet-pg {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+.bascet-pg__card-list {
+  padding-right: 128px;
+}
+.bascet-pg__card-list__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+          filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  background-color: #fff;
+}
+.bascet-pg__card-list__card__image img {
+  min-width: 262px;
+}
+.bascet-pg__card-list__card__content {
+  width: 100%;
+  padding: 22px 22px 22px 30px;
+}
+.bascet-pg__card-list__card__content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 42px;
+}
+.bascet-pg__card-list__card__content__header__close-btn {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  margin-left: 56px;
+  margin-top: 2px;
+}
+.bascet-pg__card-list__card__content__header__close-btn:hover svg path {
+  fill: #f16d7f;
+}
+.bascet-pg__card-list__card__content__header__h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  color: #222222;
+  text-transform: uppercase;
+}
+.bascet-pg__card-list__card__content__list__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+  color: #575757;
+  margin-bottom: 8px;
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bascet-pg__card-list__card__content__list__item__key {
+  width: 106px;
+}
+.bascet-pg__card-list__card__content__list__item__value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+  color: #6f6e6e;
+}
+.bascet-pg__card-list__card__content__list__item__value_price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+  color: #f16d7f;
+}
+.bascet-pg__buy {
+  max-width: 360px;
 }

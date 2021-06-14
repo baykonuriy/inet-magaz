@@ -1,0 +1,44 @@
+.new-inp {
+    &_txt {
+        width: 100%;
+        .input();
+        .text(@size: 13px, @align: left, @color: #000);
+
+        &::placeholder {
+            color: #B1B1B1;
+            .text(@align: left, @size: 13px, @color: #B1B1B1);
+        }
+
+        &:focus {
+            // outline: 1px solid @fuxia;
+            border: 1px solid @fuxia;
+
+            &:hover {
+                border: 1px solid @fuxia-dark;
+            }
+        }
+
+        &:hover {
+            border: 1px solid #000;
+        }
+    }
+
+    &_slct {
+        .input();
+        .text(@size: 13px, @align: left, @color: #000);
+
+        &:focus {
+            outline: 1px solid @fuxia;
+            border: none;
+
+            &:hover {
+                outline: 1px solid @fuxia-dark;
+            }
+        }
+
+        &:hover {
+            outline: 1px solid #000;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import "var.less";
+@import "mixins.less";
+@import "field.less";
+
+.bascet-pg {
+    .container();
+    display: flex;
+    margin-top: 96px;
+
+    &__card-list {
+        padding-right: 128px;
+
+        &__card {
+            display: flex;
+            filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+            background-color: #fff;
+
+            &__image {
+                & img {
+                    min-width: 262px;
+                }
+            }
+
+            &__content {
+                width: 100%;
+                padding: 22px 22px 22px 30px;
+
+                &__header {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 42px;
+
+                    &__close-btn {
+                        .ibtn(@width: 24px, @height: 24px);
+                        margin-left: 56px;
+                        margin-top: 2px;
+                    }
+
+                    &__h4 {
+                        .headline(@weight: 400, @size: 24px, @align: left, @lheight: 29px, @color: #222222);
+                    }
+                }
+
+                &__list {
+                    &__item {
+                        .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: #575757);
+                        margin-bottom: 8px;
+                        margin-right: 12px;
+                        display: flex;
+
+                        &__key {
+                            width: 106px;
+                        }
+
+                        &__value {
+                            .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: #6F6E6E);
+
+                            &_price {
+                                .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: @fuxia);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    &__buy {
+        max-width: 360px;
+    }
+}
