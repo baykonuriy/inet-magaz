@@ -1,0 +1,20 @@
+@import "var.less";
+@import "mixins.less";
+@import "buttons.less";
+
+.reg{
+    .container();
+    display: flex;
+    &__form{
+        max-width: 360px;
+        &__headline{
+            .text(@color: #222222, @align: left)
+            // .headline(@size: 24px, @lheight: 28px, @color: #000, @align: left);
+        }
+    }
+
+    &__loyalty{
+        padding-left: 128px;
+        width: 100%;
+    }
+}
