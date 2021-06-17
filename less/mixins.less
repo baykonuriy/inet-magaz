@@ -19,12 +19,13 @@
     text-transform: @ttransform;
 }
 
-.btn(@padding: 12px 40px, @border: 1px solid @fuxia, @color: @fuxia, @display: flex, @bgc: none) {
+.btn(@padding: 12px 40px, @border: 1px solid @fuxia, @color: @fuxia, @display: flex, @bgc: none, @boxs: border-box) {
     padding: @padding;
     border: @border;
     color: @color;
     display: @display;
     background-color: @bgc;
+    box-sizing: @boxs;
 }
 
 .btn-txt(@fstyle: normal, @fweight: normal, @fsize: 16px, @lheight: 19px) {
@@ -43,7 +44,6 @@
     width: @width;
     height: @height;
     background-color: @bgc;
-
     &:hover svg path {
         fill: @ficon;
     }

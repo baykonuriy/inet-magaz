@@ -1,0 +1,76 @@
+@import "var.less";
+@import "mixins.less";
+
+.header{
+    background-color: #F1E4E6;
+    &_main{
+        .container();
+        height: 764px;
+        &_model{
+            background-repeat: no-repeat;
+            height: 100%;
+            position: relative;
+            &_1{
+                background-image: url(../img/Layer_57-removebg-preview\ 1.png);
+                background-position: top -20px;
+                background-position-x: -226px;
+                background-size: auto 100%;
+            }
+        }
+        &__headline{
+            padding-left: 16px;
+            border-left: 12px solid #F16D7F;
+            position: absolute;
+            top: 290px;
+            left: 55%;
+            &__text{
+                font-weight: 900;
+                font-size: 48px;
+                line-height: 58px;
+                color: #222222;
+                display: inline;
+                &:last-child{
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+            }
+        }
+    }
+    &_secondary{
+        .container();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 0;
+        &__h1{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            color: #F16D7F;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.bread-crumbs {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    transition: 0.3s ease-out;
+    &:hover{
+        color: @fuxia;
+    }
+    &_checked {
+        color: #F16D7F;
+        font-weight: bold;
+        transition: 0.3s ease-out;
+        &:hover{
+            color: @fuxia-dark;
+        }
+    }
+}

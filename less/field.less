@@ -1,8 +1,12 @@
+@import "var.less";
+@import "mixins.less";
 .new-inp {
     &_txt {
         width: 100%;
         .input();
         .text(@size: 13px, @align: left, @color: #000);
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
 
         &::placeholder {
             color: #B1B1B1;
@@ -26,19 +30,21 @@
     &_slct {
         .input();
         .text(@size: 13px, @align: left, @color: #000);
-
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
         &:focus {
-            outline: 1px solid @fuxia;
-            border: none;
+            border: 1px solid @fuxia;
+            outline: none;
 
             &:hover {
-                outline: 1px solid @fuxia-dark;
+                border: 1px solid @fuxia-dark;
+                outline: none;
             }
         }
 
         &:hover {
-            outline: 1px solid #000;
-            border: none;
+            border: 1px solid #000;
+            outline: none;
         }
     }
 }
