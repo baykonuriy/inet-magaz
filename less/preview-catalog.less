@@ -9,6 +9,16 @@
     grid-row-gap: 30px;
     margin-top: 64px;
     margin-bottom: 96px;
+    @media (max-width: 720px){
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        margin-top: 20px;
+        margin-bottom: 154px;
+    }
+    @media (max-width: 680px){
+        display: flex;
+        flex-direction: column;
+    }
     &__item{
         height: 260px;
         background-position: center;
@@ -17,6 +27,14 @@
         justify-content: center;
         filter: brightness(1);
         transition: 0.3s ease-out;
+        @media (max-width: 720px){
+            height: 168px;
+            background-size: cover;
+        }
+        @media (max-width: 680px){
+            height: 248px;
+        }
+
         &:hover{
             filter: brightness(0.5);
         }

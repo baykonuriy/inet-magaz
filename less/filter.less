@@ -14,6 +14,14 @@
     z-index: 1;
     grid-column-start: 1;
     grid-column-end: 4;
+    @media (max-width: 960px) {
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 520px){
+        grid-column-end: 2;
+    }
     &__main{
         position: relative;
         &__list-wrapper{
@@ -57,5 +65,8 @@
     &__second{
         display: flex;
         align-items: center;
+        & .option-select:last-child{
+            margin-right: 0;
+        }
     }
 }
