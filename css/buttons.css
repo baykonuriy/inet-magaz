@@ -1,0 +1,108 @@
+.newbtn_ghost {
+  padding: 12px 40px;
+  border: 1px solid #a4a4a4;
+  color: #000000;
+  display: flex;
+  background-color: none;
+  box-sizing: border-box;
+  transition: 0.3s ease-out;
+}
+.newbtn_ghost:hover {
+  padding: 12px 40px;
+  border: 1px solid #f16d7f;
+  color: #ffffff;
+  display: flex;
+  background-color: #f16d7f;
+  box-sizing: border-box;
+}
+.newbtn_ghost svg path {
+  fill: #000;
+}
+.newbtn_ghost:hover svg path {
+  fill: #fff;
+}
+.newbtn_ghost_primary {
+  padding: 12px 40px;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+  display: flex;
+  background-color: none;
+  box-sizing: border-box;
+  transition: 0.3s ease-out;
+}
+.newbtn_ghost_primary:hover {
+  padding: 12px 40px;
+  border: 1px solid #b02a3c;
+  color: #b02a3c;
+  display: flex;
+  background-color: none;
+  box-sizing: border-box;
+}
+.newbtn_ghost_primary svg path {
+  fill: #f16d7f;
+}
+.newbtn_ghost_dark {
+  padding: 12px 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: flex;
+  background-color: none;
+  box-sizing: border-box;
+  transition: 0.3s ease-out;
+}
+.newbtn_ghost_dark:hover {
+  padding: 12px 40px;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+  display: flex;
+  background-color: none;
+  box-sizing: border-box;
+}
+.newbtn_ghost_dark:hover path {
+  fill: #f16d7f;
+}
+.newbtn_ghost_dark svg path {
+  fill: #fff;
+}
+.newbtn_ghost_dark svg:first-child {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.newbtn_ghost_dark svg:last-child {
+  margin-left: 8px;
+  margin-right: 0;
+}
+.newbtn_primary {
+  padding: 12px 40px;
+  border: 1px solid #f16d7f;
+  color: #ffffff;
+  display: flex;
+  background-color: #f16d7f;
+  box-sizing: border-box;
+  transition: 0.3s ease-out;
+}
+.newbtn_primary:hover {
+  padding: 12px 40px;
+  border: 1px solid #b02a3c;
+  color: #ffffff;
+  display: flex;
+  background-color: #b02a3c;
+  box-sizing: border-box;
+}
+.newbtn__txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.newbtn svg {
+  align-self: center;
+}
+.newbtn svg:first-child {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.newbtn svg:last-child {
+  margin-left: 8px;
+  margin-right: 0;
+}

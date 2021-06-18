@@ -72,11 +72,14 @@
         .btn-txt();
     }
 
-    & svg:first-child {
-        .btn-i();
-    }
-
-    & svg:last-child {
-        .btn-i(8px, 0);
+    & svg{
+        align-self: center;
+        &:first-child {
+            .btn-i();
+        }
+    
+        &:last-child {
+            .btn-i(8px, 0);
+        }
     }
 }
