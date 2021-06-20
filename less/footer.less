@@ -10,6 +10,9 @@
         @media (max-width: 960px){
             padding: 64px 0 140px 0;
         }
+        @media (max-width: 520px){
+
+        }
         &__container{
             .container();
             display: flex;
@@ -42,6 +45,10 @@
                         line-height: 24px;
                         text-align: center;
                         color: #222224;
+                        @media (max-width: 520px){
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
                     }
                 }
             }
@@ -50,7 +57,9 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
+                @media (max-width: 520px){
+                    width: 100%;
+                }
                 & .merged-form__headline{
                     font-style: normal;
                     font-weight: 400;
@@ -127,12 +136,23 @@
             display: flex;
             justify-content: space-between;
             padding: 24px 0;
+            @media(max-width: 520px) {
+                flex-direction: column;
+            }
             &__left{
                 align-self: center;
+                @media(max-width: 520px) {
+                    order: 2;
+                }
             }
             &__right{
                 display: flex;
                 justify-content: space-between;
+                @media(max-width: 520px) {
+                    justify-content: center;
+                    order: 1;
+                    margin-bottom: 40px;
+                }
                 & .social{
                     .ibtn(@width: 32px, @height: 32px);
                     margin-left: 8px;

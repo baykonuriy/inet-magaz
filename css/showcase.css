@@ -168,11 +168,10 @@
   line-height: 17px;
   color: #9F9F9F;
 }
-.showcase .card-product {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media (max-width: 960px) {
+  .showcase .card-product:last-child {
+    display: none;
+  }
 }
 .showcase__button {
   grid-column-start: 1;

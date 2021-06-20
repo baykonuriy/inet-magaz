@@ -265,7 +265,7 @@
   transition: 0.3s ease-out;
 }
 .nav-aside.closed-menu {
-  right: -232px;
+  right: -300px;
   transition: 0.3s ease-out;
 }
 .nav-aside__head {
@@ -321,6 +321,7 @@
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   margin-top: 96px;
   margin-bottom: 128px;
 }
@@ -336,18 +337,42 @@
     padding-left: 16px;
   }
 }
+@media (max-width: 980px) {
+  .bascet-pg {
+    flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  .bascet-pg {
+    margin-bottom: 96px;
+  }
+}
 .bascet-pg__card-list {
-  padding-right: 128px;
+  max-width: 652px;
+  padding-right: 24px;
+}
+@media (max-width: 980px) {
+  .bascet-pg__card-list {
+    max-width: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 64px;
+  }
 }
 .bascet-pg__card-list__card {
   display: flex;
   filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
   background-color: #fff;
-  height: 306px;
   margin-bottom: 40px;
 }
+@media (max-width: 720px) {
+  .bascet-pg__card-list__card {
+    margin-bottom: 32px;
+    height: 188px;
+  }
+}
 .bascet-pg__card-list__card__image img {
-  min-width: 262px;
+  height: 100%;
 }
 .bascet-pg__card-list__card__content {
   width: 100%;
@@ -357,6 +382,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 42px;
+}
+@media (max-width: 720px) {
+  .bascet-pg__card-list__card__content__header {
+    margin-bottom: 24px;
+  }
 }
 .bascet-pg__card-list__card__content__header__close-btn {
   width: 24px;
@@ -376,6 +406,18 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+  align-self: center;
+}
+@media (max-width: 720px) {
+  .bascet-pg__card-list__card__content__header__h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    color: #222222;
+    text-transform: uppercase;
+  }
 }
 .bascet-pg__card-list__card__content__list__item {
   font-style: normal;
@@ -388,23 +430,24 @@
   margin-right: 12px;
   display: flex;
 }
+@media (max-width: 720px) {
+  .bascet-pg__card-list__card__content__list__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: #575757;
+    margin-bottom: 4px;
+  }
+}
 .bascet-pg__card-list__card__content__list__item__key {
   width: 106px;
 }
 .bascet-pg__card-list__card__content__list__item__value {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: left;
-  color: #6f6e6e;
+  color: #6F6E6E;
 }
 .bascet-pg__card-list__card__content__list__item__value_price {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: left;
   color: #f16d7f;
 }
 .bascet-pg__card-list__card__content__list__item__quan {
@@ -429,11 +472,43 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 980px) {
+  .bascet-pg__card-list__wrp-btn {
+    justify-content: center;
+  }
+}
+.bascet-pg__card-list__wrp-btn .newbtn_ghost:first-child {
+  margin-right: 48px;
+}
 .bascet-pg__buy {
   max-width: 360px;
 }
+@media (max-width: 980px) {
+  .bascet-pg__buy {
+    max-width: none;
+    width: 100%;
+    display: flex;
+  }
+}
+@media (max-width: 720px) {
+  .bascet-pg__buy {
+    flex-direction: column;
+  }
+}
 .bascet-pg__buy__postcode {
   margin-bottom: 56px;
+}
+@media (max-width: 980px) {
+  .bascet-pg__buy__postcode {
+    margin-right: 16px;
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .bascet-pg__buy__postcode {
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
 }
 .bascet-pg__buy__postcode__leg {
   font-style: normal;
@@ -457,6 +532,20 @@
 .bascet-pg__buy__go {
   padding: 40px 32px;
   background: #F5F3F3;
+}
+@media (max-width: 980px) {
+  .bascet-pg__buy__go {
+    min-width: 360px;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 42px;
+    height: fit-content;
+  }
+}
+@media (max-width: 720px) {
+  .bascet-pg__buy__go {
+    margin-top: 0%;
+  }
 }
 .bascet-pg__buy__go .newbtn {
   width: 100%;

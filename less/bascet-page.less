@@ -6,20 +6,36 @@
 .bascet-pg {
     .container();
     display: flex;
+    justify-content: space-between;
     margin-top: 96px;
     margin-bottom: 128px;
+    @media (max-width:980px) {
+        flex-direction: column;
+    }
+    @media (max-width: 720px) {
+        margin-bottom: 96px;
+    }
     &__card-list {
-        padding-right: 128px;
-        
+        max-width: 652px;
+        padding-right: 24px;
+        @media (max-width:980px){
+            max-width: none;
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 64px;
+        }
         &__card {
             display: flex;
             filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
             background-color: #fff;
-            height: 306px;
             margin-bottom: 40px;
+            @media (max-width: 720px) {
+                margin-bottom: 32px;
+                height: 188px;
+            }
             &__image {
                 & img {
-                    min-width: 262px;
+                   height: 100%;
                 }
             }
 
@@ -31,6 +47,9 @@
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 42px;
+                    @media (max-width: 720px) {
+                        margin-bottom: 24px;
+                    }
 
                     &__close-btn {
                         .ibtn(@width: 24px, @height: 24px);
@@ -40,6 +59,10 @@
 
                     &__h4 {
                         .headline(@weight: 400, @size: 24px, @align: left, @lheight: 29px, @color: #222222);
+                        align-self: center;
+                        @media (max-width: 720px) {
+                            .headline(@weight: 400, @size: 16px, @align: left, @lheight: 19px, @color: #222222);
+                        }
                     }
                 }
 
@@ -49,16 +72,22 @@
                         margin-bottom: 8px;
                         margin-right: 12px;
                         display: flex;
+                        @media (max-width: 720px){
+                            .text(@weight: 400, @size: 14px, @lheight: 17px, @align: left, @color: #575757);
+                            margin-bottom: 4px;
+                        }
 
                         &__key {
                             width: 106px;
                         }
 
                         &__value {
-                            .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: #6F6E6E);
+                            // .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: #6F6E6E);
+                            color: #6F6E6E;
 
                             &_price {
-                                .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: @fuxia);
+                                // .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: @fuxia);
+                                color: @fuxia;
                             }
                         }
 
@@ -88,13 +117,35 @@
         &__wrp-btn{
             display: flex;
             justify-content: space-between;
+            @media (max-width: 980px) {
+                justify-content: center;
+            }
+            & .newbtn_ghost:first-child{
+                margin-right: 48px;
+            }
         }
     }
 
     &__buy {
         max-width: 360px;
+        @media (max-width:980px){
+            max-width: none;
+            width: 100%;
+            display: flex;
+        }
+        @media (max-width: 720px) {
+            flex-direction: column;
+        }
         &__postcode{
             margin-bottom: 56px;
+            @media (max-width:980px) {
+                margin-right: 16px;
+                width: 100%;
+            }
+            @media (max-width: 720px) {
+                margin-right: 0;
+                margin-bottom: 48px;
+            }
             &__leg{
                 .headline(@align:left);
                 margin-bottom: 20px;
@@ -112,6 +163,16 @@
         &__go{
             padding: 40px 32px;
             background: #F5F3F3;
+            @media (max-width:980px) {
+                min-width: 360px;
+                height: auto;
+                box-sizing: border-box;
+                margin-top: 42px;
+                height: fit-content;
+            }
+            @media (max-width: 720px) {
+                margin-top: 0%;
+            }
             & .newbtn{
                 width: 100%;
             }
@@ -124,9 +185,7 @@
                 &__item{
                     display: flex;
                     justify-content: flex-end;
-                    // &__key{
 
-                    // }
                     &__value{
                         text-align: right;
                         width: 56px;
