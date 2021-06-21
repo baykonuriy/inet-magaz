@@ -2,6 +2,7 @@
 @import "mixins.less";
 @import "field.less";
 @import "menu.less";
+@import "header.less";
 
 .bascet-pg {
     .container();
@@ -31,11 +32,17 @@
             margin-bottom: 40px;
             @media (max-width: 720px) {
                 margin-bottom: 32px;
-                height: 188px;
             }
             &__image {
+                min-width: 262px;
+                overflow: hidden;
+                display: flex;
+                @media (max-width: 720px) {
+                    min-width: 144px;
+                }
                 & img {
-                   height: 100%;
+                   width: 100%;
+                   align-self: center;
                 }
             }
 
@@ -46,10 +53,7 @@
                 &__header {
                     display: flex;
                     justify-content: space-between;
-                    margin-bottom: 42px;
-                    @media (max-width: 720px) {
-                        margin-bottom: 24px;
-                    }
+                    margin-bottom: 12px;
 
                     &__close-btn {
                         .ibtn(@width: 24px, @height: 24px);
@@ -82,23 +86,25 @@
                         }
 
                         &__value {
-                            // .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: #6F6E6E);
                             color: #6F6E6E;
 
                             &_price {
-                                // .text(@weight: 400, @size: 22px, @lheight: 26px, @align: left, @color: @fuxia);
                                 color: @fuxia;
                             }
                         }
 
                         &__quan{
-                            width: 48px;
+                            width: 32px;
                             font-size: 16px;
                             line-height: 24px;
                             color: #656565;
                             text-align: center;
                             border: 1px solid #EAEAEA;
                             box-sizing: border-box;
+                            @media (max-width: 720px) {
+                                font-size: 10px;
+                                line-height: 12px;
+                            }
                             &:hover{
                                 border: 1px solid #000;
                             }
@@ -114,14 +120,46 @@
                 }
             }
         }
+
+        .header{
+            &_shopping-cart{
+                & .header_secondary{
+                    @media (max-width:520px) {
+                        padding: 0;
+                    }
+                }
+                &__h1{
+                    @media (max-width:520px) {
+                        align-self: center;
+                    }
+                }
+            }
+        }
+
         &__wrp-btn{
             display: flex;
             justify-content: space-between;
             @media (max-width: 980px) {
                 justify-content: center;
             }
+            & .newbtn_ghost{
+                @media (max-width: 620px) {
+                    width: 100%;
+                    padding: 8px 12px;
+                }
+                & .newbtn__txt{
+                    @media (max-width: 620px) {
+                        font-size: 12px;
+                        line-height: 14px;
+                        margin: 0 auto;
+                    }
+                }
+            }
             & .newbtn_ghost:first-child{
                 margin-right: 48px;
+                @media (max-width: 620px){
+                    margin-right: 8px;
+                }
             }
         }
     }
@@ -172,6 +210,8 @@
             }
             @media (max-width: 720px) {
                 margin-top: 0%;
+                min-width: auto;
+                width: 100%;
             }
             & .newbtn{
                 width: 100%;
