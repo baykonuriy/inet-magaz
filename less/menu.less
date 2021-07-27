@@ -59,6 +59,7 @@
         &__bar{
             display: inline-flex;
             align-items: center;
+            position: relative;
             & .icon-button:nth-child(2),
             & .icon-button:nth-child(3){
                 @media (max-width:720px) {
@@ -133,5 +134,43 @@
             
         }
     }
+}
+
+
+.nav-bacet{
+    width: 520px;
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    overflow: hidden;
+    &__card{
+        display: flex;
+        &__item{
+            flex: 1;
+            padding: 0 12px;
+            align-self: center;
+            .text(@align: left);
+            &_img-wrp{
+                display: flex;
+                flex: 3;
+                padding: 0;
+                & p{
+                    align-self: center;
+                }
+                & img{
+                    width: 40px;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+    // .nav-bacet__product{
+        
+    //     // .container();
+    // }
 }
 
