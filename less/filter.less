@@ -1,0 +1,72 @@
+@import "var.less";
+@import "mixins.less";
+@import "select.less";
+@import "checkbox.less";
+
+
+
+.filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    padding: 51px 0px 44px 0px;
+    position: relative;
+    z-index: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    @media (max-width: 960px) {
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 520px){
+        grid-column-end: 2;
+    }
+    &__main{
+        position: relative;
+        &__list-wrapper{
+            background-color: #fff;
+            width: 100%;
+            &.opened-wrapper {
+                display: block;
+            }
+        }
+        &__list{
+            padding-top: 16px;
+            overflow: hidden;
+            &.closed-filter {
+                height: 53px;
+            }
+            &.opened-filter {
+                height: auto;
+            }
+            &__item {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+                padding: 5px 0 5px 16px;
+                &:first-child {
+                    color: #EF5B70;
+                    text-transform: uppercase;
+                    border-left: 6px solid #EF5B70;
+                    border-bottom: 1px solid #EBEBEB;
+                    padding-left: 20px;
+                    margin-bottom: 8px;
+                    height: 37px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    &__second{
+        display: flex;
+        align-items: center;
+        & .option-select:last-child{
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "var.less";
+@import "mixins.less";
+.new-inp {
+    &_txt {
+        width: 100%;
+        .input();
+        .text(@size: 13px, @align: left, @color: #000);
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
+
+        &::placeholder {
+            color: #B1B1B1;
+            .text(@align: left, @size: 13px, @color: #B1B1B1);
+        }
+
+        &:focus {
+            // outline: 1px solid @fuxia;
+            border: 1px solid @fuxia;
+
+            &:hover {
+                border: 1px solid @fuxia-dark;
+            }
+        }
+
+        &:hover {
+            border: 1px solid #000;
+        }
+    }
+
+    &_slct {
+        .input();
+        .text(@size: 13px, @align: left, @color: #000);
+        box-sizing: border-box;
+        transition: 0.3s ease-out;
+        &:focus {
+            border: 1px solid @fuxia;
+            outline: none;
+
+            &:hover {
+                border: 1px solid @fuxia-dark;
+                outline: none;
+            }
+        }
+
+        &:hover {
+            border: 1px solid #000;
+            outline: none;
+        }
+    }
+}

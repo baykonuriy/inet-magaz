@@ -1,0 +1,57 @@
+@import "var.less";
+@import "mixins.less";
+
+.main-advantage{
+    background-color: #222224;
+    padding: 104px 0;
+    @media (max-width: 768px){
+        padding: 48px 0 64px 0;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        color: #FBFBFB;
+        grid-column-gap: 30px;
+        text-align: center;
+        @media (max-width:768px){
+            max-width: 360px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 48px;
+        }
+        .container();
+        &__item{
+            &__image{
+                width: 48px;
+                height: 40px;
+                margin: 0 auto;
+                margin-bottom: 28px;
+            }
+            &:nth-child(1) &__image{
+                background-image: url(../img/icon1.svg);
+            }
+            &:nth-child(2) &__image{
+                background-image: url(../img/icon2.svg);
+            }
+            &:nth-child(3) &__image{
+                background-image: url(../img/icon3.svg);
+            }
+            &__headline{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FBFBFB;
+                margin-bottom: 16px;
+                display: block;
+            }
+            &__p{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #FBFBFB;
+            }
+        }
+    }
+}

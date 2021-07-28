@@ -1,0 +1,76 @@
+@import "var.less";
+
+.text(@style: normal, @weight: 300, @size: 14px,
+@lheight: 17px, @align: center, @color: #5E5E5E) {
+    font-style: @style;
+    font-weight: @weight;
+    font-size: @size;
+    line-height: @lheight;
+    text-align: @align;
+    color: @color;
+}
+
+.headline(@style: normal, @weight: 300, @size: 18px, 
+@lheight: 22px, @align: center, @color: #4D4D4D, 
+@ttransform: uppercase) {
+    font-style: @style;
+    font-weight: @weight;
+    font-size: @size;
+    line-height: @lheight;
+    text-align: @align;
+    color: @color;
+    text-transform: @ttransform;
+}
+
+.btn(@padding: 12px 40px, @border: 1px solid @fuxia, @color: @fuxia, @display: flex, @bgc: none, @boxs: border-box) {
+    padding: @padding;
+    border: @border;
+    color: @color;
+    display: @display;
+    background-color: @bgc;
+    box-sizing: @boxs;
+}
+
+.btn-txt(@fstyle: normal, @fweight: normal, @fsize: 16px, @lheight: 19px) {
+    font-style: @fstyle;
+    font-weight: @fweight;
+    font-size: @fsize;
+    line-height: @lheight;
+}
+
+.btn-i(@mleft: 0, @mright: 8px) {
+    margin-left: @mleft;
+    margin-right: @mright;
+}
+
+.ibtn(@width: 16px, @height: 16px, @bgc: #fff, @ficon: @fuxia) {
+    width: @width;
+    height: @height;
+    background-color: @bgc;
+    &:hover svg path {
+        fill: @ficon;
+    }
+}
+
+.container() {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @media (max-width:1200px) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    @media (max-width:768px) {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+.input(@border: 1px solid #A4A4A4, @padding: 14px 16px, @width: 100%, @appearance: none, @mbottom: 20px) {
+    border: @border;
+    padding: @padding;
+    width: @width;
+    appearance: @appearance;
+    margin-bottom: @mbottom;
+}

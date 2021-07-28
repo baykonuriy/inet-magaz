@@ -1,0 +1,85 @@
+@import "var.less";
+@import "mixins.less";
+
+.newbtn {
+    &_ghost {
+        .btn(@border: 1px solid #A4A4A4, @color: #000);
+        transition: 0.3s ease-out;
+
+        &:hover {
+            .btn(@bgc: @fuxia, @color: #fff);
+        }
+
+        & svg {
+            & path {
+                fill: #000;
+            }
+
+        }
+
+        &:hover svg path {
+            fill: #fff;
+        }
+
+        &_primary {
+            .btn();
+            transition: 0.3s ease-out;
+            &:hover{
+                .btn(@border: 1px solid @fuxia-dark, @color: @fuxia-dark);
+            }
+
+            & svg {
+                & path {
+                    fill: @fuxia;
+                }
+            }
+        }
+
+        &_dark {
+            .btn(@border: 1px solid #fff, @color: #fff);
+            transition: 0.3s ease-out;
+            &:hover{
+                .btn(@border: 1px solid @fuxia, @color: @fuxia);
+                & path{
+                    fill: @fuxia;
+                }
+            }
+
+            & svg {
+                & path {
+                    fill: #fff;
+                }
+            }
+            & svg:first-child {
+                .btn-i();
+            }
+        
+            & svg:last-child {
+                .btn-i(8px, 0);
+            }
+        }
+    }
+
+    &_primary {
+        .btn(@bgc: @fuxia, @color: #fff);
+        transition: 0.3s ease-out;
+        &:hover{
+            .btn(@border: 1px solid @fuxia-dark,@bgc: @fuxia-dark, @color: #fff);
+        }
+    }
+
+    &__txt {
+        .btn-txt();
+    }
+
+    & svg{
+        align-self: center;
+        &:first-child {
+            .btn-i();
+        }
+    
+        &:last-child {
+            .btn-i(8px, 0);
+        }
+    }
+}

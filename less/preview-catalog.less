@@ -1,0 +1,71 @@
+@import "var.less";
+@import "mixins.less";
+
+.preview-catalog{
+    .container();
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 64px;
+    margin-bottom: 96px;
+    @media (max-width: 720px){
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        margin-top: 20px;
+        margin-bottom: 154px;
+    }
+    @media (max-width: 680px){
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        height: 260px;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: brightness(1);
+        transition: 0.3s ease-out;
+        @media (max-width: 720px){
+            height: 168px;
+            background-size: cover;
+        }
+        @media (max-width: 680px){
+            height: 248px;
+        }
+
+        &:hover{
+            filter: brightness(0.5);
+        }
+        &__headline{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #F16D7F;
+            & span{
+                color: #FFFFFF;
+                font-size: 16px;
+                line-height: 19px;
+                display: block;
+            }
+        }
+        &_woman{
+            background-image: url(../img/pre-cat-1.jpg);
+        }
+        &_man{
+            background-image: url(../img/pre-cat-2.jpg);
+        }
+        &_kids{
+            background-image: url(../img/pre-cat-3.jpg);
+        }
+        &_acess{
+            background-image: url(../img/pre-cat-4.jpg);
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 180px;
+        }
+    }
+}
