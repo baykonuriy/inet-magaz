@@ -1,46 +1,43 @@
+'use strict'
 let cardP = document.querySelectorAll('.card-product');
 let basketCard = document.querySelector('.nav-bacet');
 
 cardP.forEach(function (elem) {
     elem.addEventListener('click', function (e) {
-        let txtProd = e.currentTarget.querySelector('.card-product__description__h4').textContent;
-        let txtPrice = e.currentTarget.querySelector('.card-product__price').textContent;
-        let img = e.currentTarget.querySelector('.card-product__image').getAttribute('src');
-        cardMaker(txtProd, txtPrice, img);
-        // checkContainer(txtProd, txtPrice, img);
+        if(e.target == e.currentTarget.querySelector('.newbtn_ghost_dark')){
+            let txtProd = e.currentTarget.querySelector('.card-product__description__h4').textContent;
+            let txtPrice = e.currentTarget.querySelector('.card-product__price').textContent;
+            let img = e.currentTarget.querySelector('.card-product__image').getAttribute('src');
+            checkContainer(txtProd, txtPrice, img);
+        }
     })
 })
 
-
 function checkContainer(name, price, img) {
-    let card = document.querySelectorAll('.nav-bacet__card');
     if (basketCard.childElementCount == 0) {
         cardMaker(name, price, img);
     }
     else if (basketCard.childElementCount > 0) {
-        card.forEach(function (elem) {
-            let checkName = elem.querySelector('.nav-bacet__card__item_img-wrp p').textContent;
-            let checkAmount = elem.querySelector('.nav-bacet__card__item_amount p').textContent;
-            let checkTotal = elem.querySelector('.nav-bacet__card__item_total p').textContent;
-            let total = elem.querySelector('.nav-bacet__card__item_total p');
-            let amount = elem.querySelector('.nav-bacet__card__item_amount p');
+        let card = document.querySelectorAll('.nav-bacet__card');
+        for(let i = 0; i < card.length; i++){
+            let checkName = card[i].querySelector('.nav-bacet__card__item_img-wrp p').textContent;
+            let checkAmount = card[i].querySelector('.nav-bacet__card__item_amount p').textContent;
+            let checkTotal = card[i].querySelector('.nav-bacet__card__item_total p').textContent;
+            let total = card[i].querySelector('.nav-bacet__card__item_total p');
+            let amount = card[i].querySelector('.nav-bacet__card__item_amount p');
             if (checkName == name) {
                 checkAmount = Number(checkAmount);
                 ++checkAmount;
                 amount.innerHTML = String(checkAmount);
                 checkTotal = Number(checkTotal) + Number(price);
-                total.innerHTML = String(checkTotal);
+                return total.innerHTML = String(checkTotal);
             }
-            else {
+            if(checkName !== name && i == card.length -1){
                 cardMaker(name, price, img);
+                document.querySelector('.icon-button__counter').innerHTML = String(card.length);
             }
-
-        })
+        }
     }
-
-    // else if (basketCard.childElementCount > 0 && checkName !== name) {
-    //     cardMaker(name, price, img);
-    // }
 }
 
 
@@ -59,7 +56,7 @@ function cardMaker(name, price, img) {
                         <p>${price}</p>
                     </div>
                     <div class="nav-bacet__card__item nav-bacet__card__item_total">
-                        <p>100$</p>
+                        <p>${price}</p>
                     </div>
                 </div>
             `)
